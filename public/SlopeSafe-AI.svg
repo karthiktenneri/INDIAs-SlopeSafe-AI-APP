@@ -1,0 +1,99 @@
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <linearGradient id="shieldBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#00f0ff" />
+      <stop offset="100%" stopColor="#0077cc" />
+    </linearGradient>
+
+    <linearGradient id="mountainFacetLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#003b7a" />
+      <stop offset="100%" stopColor="#001a3d" />
+    </linearGradient>
+
+    <linearGradient id="mountainFacetRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#00a6ff" />
+      <stop offset="100%" stopColor="#0055aa" />
+    </linearGradient>
+
+    <linearGradient id="mountainFacetCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#00e5ff" />
+      <stop offset="100%" stopColor="#0077cc" />
+    </linearGradient>
+  </defs>
+
+  <!-- Deep Black Circle Background -->
+  <circle cx="250" cy="250" r="240" fill="#000000" stroke="#00d4ff" stroke-width="8" filter="url(#cyanGlow)" />
+  <circle cx="250" cy="250" r="236" fill="#000000" />
+
+  <!-- Outer Cyan Partial Ring Arcs -->
+  <path d="M 90 200 A 210 210 0 0 1 410 200" fill="none" stroke="#00d4ff" stroke-width="7" stroke-linecap="round" />
+  <path d="M 100 350 A 210 210 0 0 0 400 350" fill="none" stroke="#00d4ff" stroke-width="8" stroke-linecap="round" />
+
+  <!-- Cyan Shield at Top -->
+  <g id="shield-group" transform="translate(0, 5)">
+    <path d="M 185 105 L 250 65 L 315 105 L 315 145 C 315 185, 250 210, 250 210 C 250 210, 185 185, 185 145 Z" fill="#000000" stroke="#00d4ff" stroke-width="5.5" stroke-linejoin="round" />
+
+    <!-- Circuit Traces -->
+    <line x1="230" y1="105" x2="230" y2="85" stroke="#00d4ff" stroke-width="4" />
+    <circle cx="230" cy="85" r="4.5" fill="#00d4ff" />
+
+    <line x1="270" y1="105" x2="270" y2="85" stroke="#00d4ff" stroke-width="4" />
+    <circle cx="270" cy="85" r="4.5" fill="#00d4ff" />
+
+    <line x1="210" y1="125" x2="195" y2="125" stroke="#00d4ff" stroke-width="4" />
+    <circle cx="195" cy="125" r="4" fill="#00d4ff" />
+
+    <line x1="210" y1="145" x2="195" y2="145" stroke="#00d4ff" stroke-width="4" />
+    <circle cx="195" cy="145" r="4" fill="#00d4ff" />
+
+    <line x1="290" y1="125" x2="305" y2="125" stroke="#00d4ff" stroke-width="4" />
+    <circle cx="305" cy="125" r="4" fill="#00d4ff" />
+
+    <line x1="290" y1="145" x2="305" y2="145" stroke="#00d4ff" stroke-width="4" />
+    <circle cx="305" cy="145" r="4" fill="#00d4ff" />
+
+    <line x1="235" y1="165" x2="235" y2="185" stroke="#00d4ff" stroke-width="4" />
+    <circle cx="235" cy="185" r="4" fill="#00d4ff" />
+
+    <line x1="265" y1="165" x2="265" y2="185" stroke="#00d4ff" stroke-width="4" />
+    <circle cx="265" cy="185" r="4" fill="#00d4ff" />
+
+    <!-- AI Processor Chip Center Box -->
+    <rect x="210" y="105" width="80" height="60" rx="6" fill="#000000" stroke="#00d4ff" stroke-width="5" />
+    <text x="250" y="148" fill="#00d4ff" font-size="34" font-family="Outfit, Inter, sans-serif" font-weight="900" text-anchor="middle" letter-spacing="2">AI</text>
+  </g>
+
+  <!-- Mountain Peaks with Snowcaps and Blue/Cyan Shaded Facets -->
+  <g id="mountains-group">
+    <polygon points="225,155 130,240 240,240" fill="url(#mountainFacetLeft)" />
+    <polygon points="225,155 240,240 260,185" fill="#002244" />
+    <polygon points="225,155 200,180 215,178 225,190 235,175 245,180" fill="#ffffff" />
+    <polygon points="260,185 240,240 280,240" fill="#00142b" />
+    <polygon points="285,160 260,185 280,240 370,240" fill="url(#mountainFacetRight)" />
+    <polygon points="285,160 370,240 435,235 320,205" fill="url(#mountainFacetCyan)" />
+    <polygon points="285,160 265,185 280,182 290,195 305,182 320,190" fill="#ffffff" />
+    <polyline points="95,245 225,155 260,185 285,160 435,235" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+    <line x1="285" y1="160" x2="330" y2="240" stroke="#001122" stroke-width="4" />
+  </g>
+
+  <!-- Typography: iNDIA'S -->
+  <circle cx="78" cy="288" r="11" fill="#00d4ff" filter="url(#cyanGlow)" />
+  <rect x="71" y="306" width="14" height="42" fill="#00d4ff" rx="2" />
+  <text x="94" y="348" fill="#ffffff" font-size="56" font-family="Outfit, 'Arial Black', sans-serif" font-weight="900" letter-spacing="4">NDIA'S</text>
+
+  <!-- Middle Bar: — SlopeSafe-AI — -->
+  <line x1="45" y1="384" x2="80" y2="384" stroke="#00d4ff" stroke-width="6" stroke-linecap="round" />
+  <text x="250" y="395" fill="#ffffff" font-size="36" font-family="Outfit, Inter, sans-serif" font-weight="900" text-anchor="middle" letter-spacing="2">SlopeSafe-AI</text>
+  <line x1="420" y1="384" x2="455" y2="384" stroke="#00d4ff" stroke-width="6" stroke-linecap="round" />
+
+  <!-- Bottom Text: ERROR 404 -->
+  <text x="250" y="442" fill="#00d4ff" font-size="30" font-family="Outfit, 'JetBrains Mono', monospace" font-weight="900" text-anchor="middle" letter-spacing="4">ERROR 404</text>
+</svg>
